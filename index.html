@@ -1,0 +1,449 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+ 
+<style>
+body{
+background-color:#000000;
+background-image: url('https://i.imgur.com/BvMXWnr.jpg') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:cover;
+}
+ 
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: #06c232;}
+::-webkit-scrollbar-thumb {background: #32ad6e;}
+ 
+#container {
+position:absolute;
+border: 2px solid #006600;
+background-color:rgba(0,0,0,0.85);
+width:60%;
+height:60%;
+left:20%;
+top:20%;
+}
+ 
+#title {
+position:absolute;
+background-image: url('https://i.imgur.com/M1pmc4i.png') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:100% 100%;
+width:20%;
+height:8%;
+left:20%;
+top:13%;
+}
+ 
+#tabbox1 {
+position:absolute;
+background:#006600;
+width:7%;
+height:3%;
+left:45%;
+top:17%;
+}
+ 
+#tabbox2 {
+position:absolute;
+background:#006600;
+width:7%;
+height:3%;
+left:53%;
+top:17%;
+}
+ 
+#tabbox3 {
+position:absolute;
+background:#006600;
+width:7%;
+height:3%;
+left:61%;
+top:17%;
+}
+ 
+#tabbox4 {
+position:absolute;
+background:#006600;
+width:7%;
+height:3%;
+left:69%;
+top:17%;
+}
+ 
+#pic1 {
+position:absolute;
+width:70%;
+height:100%;
+top:0%;
+left:30%;
+background-image: url('https://i.imgur.com/j8YklKZ.png') !important;
+background-repeat:no-repeat !important;
+background-position:left !important;
+background-size:cover;
+}
+ 
+#minititle1 {
+position:absolute;
+width:65%;
+height:10%;
+top:87%;
+left:2%;
+color:#fa930c;
+font-size:5vh;
+font-family: 'Audiowide', cursive;
+text-transform:uppercase;
+}
+ 
+#text1 {
+position:absolute;
+overflow:auto;
+padding:2%;
+color:#ffffff;
+font-size:1.5vh;
+font-family: 'Khand', sans-serif;
+width:35%;
+height:73%;
+top:5%;
+left:2%;
+}
+ 
+#pic2 {
+position:absolute;
+height:100%;
+width:40%;
+top:0%;
+left:60%;
+background-image: url('https://i.imgur.com/RdvVh19.png') !important;
+background-repeat:no-repeat !important;
+background-position:left !important;
+background-size:cover;
+}
+ 
+#pic3 {
+position:absolute;
+height:100%;
+width:40%;
+top:0%;
+left:60%;
+background-image: url('https://i.imgur.com/NjiVCUC.png') !important;
+background-repeat:no-repeat !important;
+background-position:left !important;
+background-size:cover;
+}
+ 
+#pic4 {
+position:absolute;
+height:100%;
+width:40%;
+top:0%;
+left:60%;
+background-image: url('https://i.imgur.com/VztqYg7.png') !important;
+background-repeat:no-repeat !important;
+background-position:left !important;
+background-size:cover;
+}
+ 
+#idpic1 {
+position:absolute;
+width:15%;
+height:30%;
+top:2%;
+left:1%;
+border-width:8px;
+border-color:#00c427;
+border-style:double;
+background-image: url('https://i.imgur.com/O3G6FKG.png') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:100% 100%;
+}
+ 
+#idpic2 {
+position:absolute;
+width:15%;
+height:30%;
+top:2%;
+left:1%;
+border-width:8px;
+border-color:#00c427;
+border-style:double;
+background-image: url('https://i.imgur.com/Jnxq42w.png') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:100% 100%;
+}
+ 
+#idpic3 {
+position:absolute;
+width:15%;
+height:30%;
+top:2%;
+left:1%;
+border-width:8px;
+border-color:#00c427;
+border-style:double;
+background-image: url('https://i.imgur.com/9zZWTxH.png') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:100% 100%;
+}
+ 
+#quote {
+position:absolute;
+width:40%;
+height:10%;
+top:2%;
+left:20%;
+color:#fa930c;
+font-size:3vh;
+font-family: 'Audiowide', cursive;
+text-transform:uppercase;
+text-align:center;
+}
+ 
+#basics {
+position:absolute;
+width:16.75%;
+height:61%;
+left:1%;
+top:37%;
+text-align:right;
+color:#ffffff;
+font-size:1.5vh;
+font-family: 'Khand', sans-serif;
+}
+ 
+#basics b {
+float:left;
+color:#f28d77;
+text-shadow: 1px 0 .2px #FF0000, 1px 0 .2px #00F1F5;
+}
+ 
+#text2 {
+position:absolute;
+overflow:auto;
+border:2px solid #006600;
+background:#000000;
+padding:2%;
+top:18%;
+left:20%;
+width:38%;
+height:68%;
+color:#ffffff;
+font-size:1.5vh;
+font-family: 'Khand', sans-serif;
+}
+ 
+.tabs {
+display:block;
+width:100%;
+height:100%;
+text-align:center;
+font-family: 'Khand', sans-serif;
+font-size:1.5vh;
+line-height:2;
+color:#ffffff;
+letter-spacing:5px;
+text-transform:bold;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+.tabs:hover {
+color:#fa930c;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+#tab1,#tab2,#tab3,#tab4 {
+display: none;
+}
+ 
+h1 {
+color:#ffffff;
+border-left: 10px solid #006e30;
+background-color: #32ad6e;
+font-size:2vh;
+font-family: 'Audiowide', cursive;
+letter-spacing:5px;
+}
+ 
+b {
+color:#fa930c;
+text-transform:uppercase;
+font-family: 'Audiowide', cursive;
+}
+ 
+i {
+color:#f28d77;
+}
+ 
+a {
+color:#006600;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+a:hover {
+color:#f28d77;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+</style>
+ 
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur829.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Khand" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('container').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('picbox').innerHTML=document.getElementById(id).innerHTML}</script>
+ 
+<div id="container">
+<div id="pic1"></div>
+<div id="text1">
+<h1> .. Heading One</h1>
+<b>Bold</b>
+<br>
+<i>Itallic</i>
+<br>
+<a target="_blank" href="http://">Link</a>
+<br>
+Normal text looks like this Normal text looks like this Normal text looks like this Normal text looks like this Normal text looks like this
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+</div>
+<div id="minititle1">
+Get In The Groove ♫♪♫
+</div>
+</div>
+<div id="title"></div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1')">Home</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab2')">Yaotome</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab3')">Kujo</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab4')">Tsunashi</span>
+</div>
+ 
+<div id="tab1">
+<div id="pic1"></div>
+<div id="text1">
+<h1> .. Heading One</h1>
+<b>Bold</b>
+<br>
+<i>Itallic</i>
+<br>
+<a href="http://">Link</a>
+<br>
+Normal text looks like this Normal text looks like this Normal text looks like this Normal text looks like this Normal text looks like this
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+</div>
+<div id="minititle1">
+Get In The Groove ♫♪♫
+</div>
+</div>
+ 
+<div id="tab2">
+<div id="pic2"></div>
+<div id="idpic1"></div>
+<div id="quote">
+"...Insert Quote Here<br>Or Something..."
+</div>
+<div id="basics">
+<h1>Basics</h1>
+<b>Kanji:</b> 八乙女 楽<br>
+<b>Rōmaji:</b> Yaotome Gaku<br>
+<b>Gender:</b> Male<br>
+<b>Birthday:</b> August 16<br>
+<b>Age:</b> 22<br>
+<b>Sign:</b> Leo<br>
+<b>Height:</b> 183 cm (6' 0")<br>
+<b>Blood Type:</b> B<br>
+<b>Symbol:</b> Treble (G clef)<br>
+<b>Position:</b> Leader<br>
+<b>Likes:</b> Soba<br>
+<b>Dislikes:</b> People who do not value their family
+</div>
+<div id="text2">
+<h1>A Box For Words!</h1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+</div>
+</div>
+ 
+<div id="tab3">
+<div id="pic3"></div>
+<div id="idpic2"></div>
+<div id="quote">
+"...Insert Quote Here<br>Or Something..."
+</div>
+<div id="basics">
+<h1>Basics</h1>
+<b>Kanji:</b> 九条 天<br>
+<b>Rōmaji:</b> Kujou Tenn<br>
+<b>Gender:</b> Male<br>
+<b>Birthday:</b> July 9<br>
+<b>Age:</b> 18<br>
+<b>Sign:</b> Cancer<br>
+<b>Height:</b> 173 cm (5' 8")<br>
+<b>Blood Type:</b> A<br>
+<b>Symbol:</b> Alto (C and Tenor clefs)<br>
+<b>Position:</b> Center<br>
+<b>Likes:</b> Things that are perfect<br>
+<b>Dislikes:</b> Things that are half-assed
+</div>
+<div id="text2">
+<h1>A Box For Words!</h1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+</div>
+</div>
+ 
+<div id="tab4">
+<div id="pic4"></div>
+<div id="idpic3"></div>
+<div id="quote">
+"...Insert Quote Here<br>Or Something..."
+</div>
+<div id="basics">
+<h1>Basics</h1>
+<b>Kanji:</b> 十 龍之介<br>
+<b>Rōmaji:</b> Tsunashi Ryunosuke<br>
+<b>Gender:</b> Male<br>
+<b>Birthday:</b> October 12<br>
+<b>Age:</b> 23<br>
+<b>Sign:</b> Libra<br>
+<b>Height:</b> 190 cm (6' 2")<br>
+<b>Blood Type:</b> O<br>
+<b>Symbol:</b> Bass Clef (F Clef)<br>
+<b>Likes:</b> Okinawan cuisine and<br>alcohol<br>
+<b>Dislikes:</b> Nothing in particular
+</div>
+<div id="text2">
+<h1>A Box For Words!</h1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+</div>
+</div>
+ 
+<embed style="height: 0%; width: 0%;"src="insertfilename.mp3" autostart="true" loop="true">
